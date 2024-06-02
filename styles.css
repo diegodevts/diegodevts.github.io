@@ -1,25 +1,54 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #fafafa;
 }
 
 header {
     background: #333;
-    color: #fff;
+    color: white;
     padding: 20px 0;
     text-align: center;
 }
 
-header h1 {
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.header-content {
+    padding: 50px 20px;
+}
+
+.header-content h1 {
     margin: 0;
     font-size: 2.5em;
 }
 
-header p {
-    margin: 0;
+.header-content p {
     font-size: 1.2em;
 }
 
@@ -28,44 +57,54 @@ header p {
     margin: 0 auto;
 }
 
-#projects {
-    padding: 20px 0;
+section {
+    padding: 40px 0;
 }
 
-#projects h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2em;
+#projects .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 
 .project {
-    background: #fff;
-    margin-bottom: 20px;
+    background: white;
     padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .project h3 {
     margin-top: 0;
 }
 
-.project p {
-    font-size: 1em;
+#contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.project a {
-    color: #007BFF;
-    text-decoration: none;
-    margin-right: 10px;
+#contact form input,
+#contact form textarea {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
 footer {
     background: #333;
-    color: #fff;
+    color: white;
     text-align: center;
     padding: 10px 0;
-    position: absolute;
-    width: 100%;
-    bottom: 0;
 }
