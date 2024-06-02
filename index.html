@@ -3,49 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>My Custom Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <div class="container">
-            <h1>John Doe</h1>
-            <p>Front-End Developer | Creative Designer</p>
+        <nav>
+            <div class="logo">MyLogo</div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Developer | Designer | Creator</p>
         </div>
     </header>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+        </div>
+    </section>
     <section id="projects">
         <div class="container">
-            <h2>Projects</h2>
-            <div class="project">
-                <h3>Project Alpha</h3>
-                <p>A dynamic website builder with intuitive UI and PWA capabilities.</p>
-                <a href="#">View Site</a>
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <h3>Project One</h3>
+                    <p>A brief description of the project.</p>
+                </div>
+                <div class="project">
+                    <h3>Project Two</h3>
+                    <p>A brief description of the project.</p>
+                </div>
+                <div class="project">
+                    <h3>Project Three</h3>
+                    <p>A brief description of the project.</p>
+                </div>
+                <div class="project">
+                    <h3>Project Four</h3>
+                    <p>A brief description of the project.</p>
+                </div>
             </div>
-            <div class="project">
-                <h3>Lib.js</h3>
-                <p>A lightweight library for web-components, no build step needed.</p>
-                <a href="#">View Site</a> <a href="#">Github</a>
-            </div>
-            <div class="project">
-                <h3>CookieMonster</h3>
-                <p>A minimal cookie consent plugin built with vanilla JS and SCSS.</p>
-                <a href="#">View Site</a> <a href="#">Github</a>
-            </div>
-            <div class="project">
-                <h3>Time Tracker</h3>
-                <p>An app to convert activity time into screen time for children, built with Vue.js.</p>
-                <a href="#">View Site</a>
-            </div>
-            <div class="project">
-                <h3>SVG Inline</h3>
-                <p>A tool to render SVG files inline with support for HTML files and data passing.</p>
-                <a href="#">View Site</a> <a href="#">Github</a>
-            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form>
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <textarea placeholder="Your Message"></textarea>
+                <button type="submit">Send</button>
+            </form>
         </div>
     </section>
     <footer>
         <div class="container">
-            <p>&copy; 2024 John Doe</p>
+            <p>&copy; 2024 My Custom Portfolio</p>
         </div>
     </footer>
 </body>
