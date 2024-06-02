@@ -3,67 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Custom Portfolio</title>
+    <title>Custom Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">MyLogo</div>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-content">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Developer | Designer | Creator</p>
+        <div class="container">
+            <nav>
+                <div class="logo">MyLogo</div>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-content">
+                <h1>Discover My Work</h1>
+                <p>Developer | Designer | Creator</p>
+            </div>
         </div>
     </header>
-    <section id="about">
+    <section id="about" class="section">
         <div class="container">
             <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            <p>I am a passionate developer and designer with a knack for creating beautiful and functional websites.</p>
         </div>
     </section>
-    <section id="projects">
+    <section id="projects" class="section">
         <div class="container">
-            <h2>My Projects</h2>
-            <div class="project-grid">
+            <h2>Projects</h2>
+            <div class="projects-grid">
                 <div class="project">
                     <h3>Project One</h3>
-                    <p>A brief description of the project.</p>
+                    <p>Brief description of the project.</p>
                 </div>
                 <div class="project">
                     <h3>Project Two</h3>
-                    <p>A brief description of the project.</p>
+                    <p>Brief description of the project.</p>
                 </div>
                 <div class="project">
                     <h3>Project Three</h3>
-                    <p>A brief description of the project.</p>
+                    <p>Brief description of the project.</p>
                 </div>
                 <div class="project">
                     <h3>Project Four</h3>
-                    <p>A brief description of the project.</p>
+                    <p>Brief description of the project.</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="contact">
+    <section id="contact" class="section">
         <div class="container">
             <h2>Contact Me</h2>
             <form>
-                <input type="text" placeholder="Your Name">
-                <input type="email" placeholder="Your Email">
-                <textarea placeholder="Your Message"></textarea>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
                 <button type="submit">Send</button>
             </form>
         </div>
     </section>
     <footer>
         <div class="container">
-            <p>&copy; 2024 My Custom Portfolio</p>
+            <p>&copy; 2024 Custom Portfolio</p>
         </div>
     </footer>
 </body>
