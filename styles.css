@@ -1,46 +1,95 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     background-color: #313131;
     color: #fff;
 }
 
 header {
-    background-color: #fff;
-    color: #313131;
-    padding: 10px 0;
+    background-color: #1e1e1e;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+    list-style: none;
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 nav li {
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav a {
-    color: #313131;
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
 }
 
+#hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #444;
+    background-image: url('background.jpg'); /* Coloque uma imagem de fundo aqui */
+    background-size: cover;
+    background-position: center;
+}
+
+#hero h1 {
+    font-size: 4rem;
+    margin: 0;
+}
+
+#hero p {
+    font-size: 1.5rem;
+}
+
+#hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #313131;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#hero .btn:hover {
+    background-color: #f0f0f0;
+}
+
 section {
-    padding: 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
+#about {
+    background-color: #222;
+}
+
 #projects .project {
-    background-color: #fff;
-    color: #313131;
+    background-color: #1e1e1e;
     margin: 20px auto;
-    padding: 10px;
-    border-radius: 5px;
+    padding: 20px;
+    border-radius: 10px;
     width: 80%;
+    transition: transform 0.3s;
+}
+
+#projects .project:hover {
+    transform: translateY(-10px);
 }
 
 #contact-form {
@@ -62,6 +111,8 @@ section {
     padding: 10px;
     border: none;
     border-radius: 5px;
+    background-color: #444;
+    color: #fff;
 }
 
 #contact-form button {
@@ -72,11 +123,16 @@ section {
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#contact-form button:hover {
+    background-color: #f0f0f0;
 }
 
 footer {
-    background-color: #fff;
-    color: #313131;
+    background-color: #1e1e1e;
+    color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
 }
